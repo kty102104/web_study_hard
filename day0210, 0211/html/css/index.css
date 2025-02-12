@@ -33,7 +33,7 @@
   font-size: 20px;
   color: #666;
   font-weight: 600;
-  padding:0 5px;
+  padding: 0 5px;
 }
 
 /* li 중에서 첫번째요소
@@ -409,14 +409,12 @@
 #footer {
   float: left;
   width: 100%;
-  background-color: turquoise;
 }
 
 #footer .footer_top {
   margin: 0 auto;
   width: 1000px;
   height: 290px;
-  background-color: #ccc;
 }
 
 #footer .footer_top .all {
@@ -429,10 +427,6 @@
   margin-right: 50px;
 }
 
-#footer .footer_top .sub {
-
-}
-
 #footer .footer_top .sub li {
   margin-bottom: 5px;
 }
@@ -442,9 +436,46 @@
   color: #000;
 }
 
-#footer .footer_top .sub a {
+#footer .footer_top .sub a{
   font-size: 15px;
   color: #666;
+}
+
+#footer .customer {
+  float: right;
+  width: 240px;
+}
+
+#footer .customer .ttl {
+  padding: 20px 0 6px 0;
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#footer .customer .s_ttl {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#footer .customer .txt {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+#footer .customer .app {
+
+}
+
+#footer .customer .app li {
+  float: left;
+  margin: 0 2.5px;
+  width: 110px;
+  height: 60px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 60px; /* 가운데 배치(li의 높이만큼) */
 }
 
 #footer .footer_line {
@@ -460,3 +491,78 @@
   background-color: #ccc;
 }
 
+#footer .footer_bom .logo2 {
+  float: left;
+  margin: 25px 0 0 5px;
+  width: 70px;
+  height: 60px;
+  background: url(../images/logo2.JPG) no-repeat 0 0;
+}
+
+#footer .footer_bom .group {
+  float: left;
+  margin: 0 0 0 15px;
+}
+
+#footer .info_mn {}
+
+#footer .info_mn li {
+  float: left;
+}
+
+#footer .info_mn li::after {
+  content: "/";
+  font-size: 14px;
+  padding: 0 5px;
+  /* content에 대해서 font-size와 padding 적용*/
+}
+
+#footer .info_mn li:last-child::after {
+  content: " ";
+}
+
+#footer .info_mn li:first-child{}
+/* n번째 요소 선택 */
+#footer .info_mn li:nth-child(1) a{
+  color: red;
+}
+#footer .info_mn li:nth-child(2) a{
+  color: rgb(221, 147, 62);
+}
+#footer .info_mn li:nth-child(3) a{
+  color: rgb(187, 201, 61);
+}
+#footer .info_mn li:nth-child(4) a{
+  color: rgb(61, 201, 91);
+}
+#footer .info_mn li:nth-child(5) a{
+  color: rgb(61, 82, 201);
+}
+#footer .info_mn li:last-child{}
+
+#footer .info_mn a {
+  font-size: 14px;
+  font-weight: 900;
+  color: #000;
+}
+
+#footer .footer_bom .group2 {
+  float: right;
+}
+
+#footer .group2 .sns {
+  margin-top: 30px;
+}
+
+#footer .group2 .sns li {
+  float: left;
+  margin-right: 5px;
+}
+
+#footer .group2 .selectMn {
+  margin-top: 10px;
+  width: 160px;
+  height: 25px;
+  font-size: 15px;
+  border: 1px solid #333;
+}
