@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+  /*
+    - line-height "normal, 숫자, 숫자em, %“ : 줄간격
+    - text-indent "숫자em, 퍼센트, 숫자“ : 들여쓰기, 음수사용시 내어쓰기
+    - text-align "left, right, center, justify" : 텍스트나 이미지 수평정렬
+    - text-decoration “none, underline, overline, line-through" : 줄 긋기 유전되지 않음
+    - letter-spacing "normal, 숫자em, 숫자“ : 글자 간격
+    - word-spacing : 단어와 단어사이의 간격
+    - text-transform "capitalize, uppercase, lowercase, none" : 영문자 변환 첫글자만 대문자 소문자
+    ․ vertical-align "baseline, sup, sub, middle, text-top, - top, text-bottom, bottom"0 : 텍스트나 이미지 수직정렬
+  */
+
+    .list01 {
+      width: 600px;
+      font-size: 20px;
+      line-height: 1.2; /*기존 글자 크기 + 행간*/
+      letter-spacing: 0px;
+      word-spacing: 50px; /*단어와 단어 사이 간격*/
+      text-align: center;
+      border: 1px solid #000;
+    }
+
+    .txt01 {
+      font-size: 50px;
+      text-transform: capitalize; /*첫 글자만 대문자*/
+      /* text-decoration: underline; */
+      text-decoration-line: underline;
+      text-decoration-color: red;
+      text-decoration-style: dotted;
+      text-indent: 200px;
+    }
+    .txt02 {
+      font-size: 50px;
+      text-transform: lowercase;
+      text-decoration: overline;
+      text-indent: -50px;
+    }
+    .txt03 {
+      font-size: 50px;
+      text-transform: uppercase;
+      text-decoration: line-through;
+    }
+    a {
+      text-decoration: none;
+      font-size: 50px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="list01">
+    문단 태그 입니다<br>
+    문단 태그 입니다<br>
+    문단 태그 입니다<br>
+  </p>
+
+  <p class="txt01">
+    apple01-1<br>
+    apple02-2
+  </p>
+  <p class="txt02">
+    apple02
+  </p>
+  <p class="txt03">
+    apple03
+  </p>
+    <a href="#">바로가기버튼</a>
+  <p>
+    
+  </p>
+  
+</body>
+</html>

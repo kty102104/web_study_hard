@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+    }
+
+    .box1 {
+      float: left;
+      background-color: red;
+    }
+
+    .box2 {
+      float: left;
+      background-color: green;
+    }
+
+    .box3 {
+      clear: left;
+      background-color: blue;
+    }
+
+    .box4 {
+      clear: both;  /* 가로방향으로 모두 차지한다 */
+      float: right;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    float: 배치
+    float:left; 요소를 왼쪽 배치
+    float:right; 요소를 오른쪽 배치
+    clear: float 배치설정을 무시하고 새롭게 배치
+    clear:left; / clear:right;
+  -->
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+
+  
+</body>
+</html>

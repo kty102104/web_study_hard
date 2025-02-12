@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이프레임</title>
+</head>
+<body>
+  <!-- 
+    iframe은 inline frame의 약자입니다. iframe을 이용하면 웹페이지 안에 또 다른 웹페이지를 삽입할 수 있습니다.
+    <iframe scr="삽입할 페이지의 주소 또는 문서위치" style="크기를 지정할 css 코드"></iframe>
+  -->
+
+  <p><a href="http://koreaisacademy.com" target="_blank">코리아it아카데미(새브라우저)</a></p>
+  <p><a href="http://koreaisacademy.com">코리아it아카데미(현재브라우저)</a></p>
+  <p><a href="http://koreaisacademy.com" target="if">코리아it아카데미(아이프레임)</a></p>
+  <p><a href="./iframe2.html" target="if">코리아it아카데미(아이프레임)</a></p>
+  <p><a href="https://news.naver.com/" target="if">뉴스</a></p>
+
+  <p>
+    <iframe src="http://koreaisacademy.com" style="width: 800px; 
+    height: 700px; border: 3px dashed red;" name="if"></iframe>
+  </p>
+
+  <!-- 유튜브에서 동영상 가져오기(공유 -> 퍼가기) -->
+  <p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AnsIOuhkSEA?si=WT1t4kESYWFyGQw6" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-medi
+    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </p>
+  <!-- 아이프레임을 활용해서 개인정보보호정책 만들기 -->
+  <p>
+    <iframe width="400" height="500" src="./text.html"></iframe>
+  </p>
+</body>
+</html>

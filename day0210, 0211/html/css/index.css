@@ -1,0 +1,462 @@
+#wrap {width: 100%;}
+
+/* 상단영역 */
+#header {
+  float: left;
+  width: 100%;
+  height: 160px;
+}
+
+#header_top {
+  margin: 0 auto; /* 가운데 배치 */
+  width: 1000px;
+  height: 115px;
+  position: relative;
+}
+
+#header_top .logo {
+  float: left;
+  margin: 50px 0 0 0;
+}
+
+#header_top .qmenu {
+  float: left;
+  margin: 55px 0 0 140px;
+}
+
+#header_top .qmenu li {
+  float: left;
+}
+/* 메뉴 사이에 기호 추가하기 */
+#header_top .qmenu li:after {   /* 가상 선택자 */
+  content: "·"; 
+  font-size: 20px;
+  color: #666;
+  font-weight: 600;
+  padding:0 5px;
+}
+
+/* li 중에서 첫번째요소
+#header_top .qmenu li:first-child {} */
+
+/* li 중에서 마지막요소 */
+#header_top .qmenu li:last-child:after {
+  content:" "   /* 기호 제거 */
+}
+
+#header_top .qmenu li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+#header_top .input {
+  float: left;
+  margin: 55px 0 0 20px;
+  width: 260px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  line-height: 25px;
+}
+
+#header_top .input span {
+  float: left;
+  padding-left: 8px;  /* 왼쪽 여백 */
+  color: #666;
+}
+
+#header_top .input a {
+  float: right;
+  margin-top: 1.5px;
+}
+
+#header_top .info_mn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+#header_top .info_mn li {
+  float: left;
+}
+
+#header_top .info_mn a {
+  font-size: 12px;
+}
+
+#header_top .info_mn li:last-child::after {
+  content: "";
+}
+
+#header_top .info_mn li:after {
+  content: "|";
+  font-size: 12px;
+  padding: 0 5px;
+  position: relative;
+  top: -1px;
+}
+
+#header_nav {
+  width: 100%;
+  height: 46px;
+  background: url(../images/nav_area.jpg) no-repeat 50% 0;
+}
+
+#header_nav ul {
+  margin: 0 auto; /* 가로값 설정해야 적용됨 */
+  width: 1005px;
+}
+
+#header_nav ul li {
+  float: left;  
+}
+
+/* 메인이미지영역 */
+#main_img {
+  float: left;
+  width: 100%;
+  height: 455px;
+  background: url(../images/main_img.jpg) no-repeat 50% 0; /* 가운데 배치 */
+}
+
+/* 콘텐츠영역 */
+#contents {
+  float: left; /* item 여백 설정 시 크기가 같이 줄어드는 문제 해결 */
+  width: 100%;
+  /* height: 1950px; 안의 내용이 전체 크기를 넘어가기 때문에 삭제 */
+}
+
+#contents .item { /* class는 여러 개일수 있기 때문에 부모 선택자 표시 */
+  /* float: left; margin은 float와 사용할 수 없음 -> contents에 float 삽입 */  
+  margin: 0 auto;
+  margin-top: 40px; 
+  width: 1000px;
+  height: 260px;
+}
+
+#contents .item_h {
+  float: left;
+  width: 170px;
+  height: 260px;
+}
+#contents .item_h h3 {  /* h3이므로 weight 필요 X */
+  font-size: 22px;
+  color: #333;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 18px 0;
+}
+
+#contents .item_h ul {
+  margin-top: 30px;
+}
+
+#contents .item_h li {
+  margin-bottom: 8px;
+}
+
+#contents .item_h li a {
+  font-size: 18px;  /* 글자를 직접 감싸고 있는 a태그에 설정 */
+  font-weight: 900;
+}
+
+#contents .item_h li a:hover {
+  color: orange;
+  text-decoration: underline;
+  text-decoration-color: orange;
+
+}
+
+#contents .item_h li a:hover::after {
+  content: " >";
+}
+
+#contents .item_b {
+  float: right;
+  width: 800px;
+  height: 260px;
+  font-size: 0px;
+  /* .obj에서 display: inline-block으로 변경했을 때 생기는 여백 문제 해결 */
+}
+
+/* 800 - 185*4 = 60   60 / 3(여백개수) = 20 */
+#contents .item_b .obj {
+  /* float: left; */
+  display: inline-block;
+  margin-right: 20px;
+  box-sizing: border-box;
+  /* width와 height가 border를 포함하도록 설정 */ 
+  width: 185px;
+  height: 260px;
+  border: 1px solid #ccc;
+}
+
+#contents .item_b .obj:last-child {
+  margin-right: 0px;
+}
+
+#contents .item_b img {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+#contents .item_b .txt_area {
+  padding: 15px 0 0 10px;
+  /* padding값을 적용할 때 가로세로 크기가 설정되었을 때 padding값만큼 크기가 확장된다. 
+  하지만 설정되지 않았을 때는 확장되지 않는다.*/
+}
+
+#contents .item_b .txt_area h4 {
+  font-size: 13px;
+}
+
+#contents .item_b .txt_area span {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+#contents .banner {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1000px;
+  height: 280px;  
+  background-color: #ccc;
+}
+/* 1000 - 321*3 = 37    37 / 2 = 18.5 */
+#contents .banner a {
+  float: left;
+  margin-right: 18.5px;
+  /* 이미지를 감싸고 있는 a태그에서 간격 조정 */
+}
+
+#contents .banner a:last-child {
+  margin-right: 0;
+}
+
+#contents .movie {
+  margin-top: 40px;
+  width: 100%;
+  height: 300px;
+  background: url(../images/movie.png) no-repeat 50% 0;
+  /* 50% : 화면이 작아질 때 사진이 가운데에 오도록 설정 */
+  position: relative;
+  /* movie a 위치의 기준점 */
+}
+
+#contents .movie a {
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -80px;
+  border: 1px solid #fff;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+#contents .movie a:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: all 0.7s; /* 바뀔 때, 돌아올 때 모두 0.7초 소요 */
+}
+
+#contents .style {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1000px;
+  height: 260px;
+}
+#contents .style_h {
+  float: left;
+  width: 170px;
+  height: 260px;
+}
+
+#contents .style_h h3 {
+  font-size: 22px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 18px 0;
+}
+
+#contents .style_h ul {
+  margin-top: 30px;
+}
+
+#contents .style_h li {
+  margin-bottom: 8px;
+}
+
+#contents .style_h a {
+  font-size: 18px;
+}
+
+#contents .style_b {
+  float: right;
+  width: 800px;
+  height: 260px;
+}
+
+#contents .style_b li {
+  float: left;
+  width: 185px;
+  height: 260px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#contents .style_b li:last-child {
+  margin-right: 0px;
+}
+
+#contents .style_b li img {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+#contents .style_b li .txt_area {
+  width: 100%;
+  padding: 15px 0 0 8px;
+}
+
+#contents .style_b li .txt_area h4 {
+  font-size: 13px;
+}
+
+#contents .style_b li .txt_area span {
+  font-size: 11px;
+}
+
+#contents .go_btns {
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 1000px;
+  height: 400px;
+}
+
+#contents .go_btns .group {
+  float: left;
+  width: 492px;
+}
+
+#contents .go_btns .group a:last-child {
+  margin-top: 15px;
+  display: block; 
+  /* 마진값이 적용되지 않는 건 현재 요소가 인라인 레벨요소이기 때문
+    이를 해결하기 위해 display: block 설정 */
+}
+
+#contents .go_btns > a {
+  float: right;
+}
+
+
+
+#contents .info_area {
+  margin-top: 80px;
+  width: 100%;
+  height: 162px;
+  background: url(../images/footer_top_bg.jpg) repeat-x 0 0;
+}
+
+#contents .info_area_in {
+  margin: 0 auto;
+  width: 1000px;
+  height: 162px;
+}
+
+#contents .info_area_in img {
+  float: left;
+}
+
+
+#contents .notice {
+  width: 100%;
+}
+
+#contents .notice h4 {
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+#contents .notice p {
+  float: left;
+  margin-left: 30px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 50px;
+}
+
+#contents .notice span {
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  padding-right: 5px;
+  line-height: 50px;
+}
+
+/* 하단영역 */
+#footer {
+  float: left;
+  width: 100%;
+  background-color: turquoise;
+}
+
+#footer .footer_top {
+  margin: 0 auto;
+  width: 1000px;
+  height: 290px;
+  background-color: #ccc;
+}
+
+#footer .footer_top .all {
+  float: left;
+  margin: 50px 0 0 10px;
+}
+
+#footer .footer_top .all>li {
+  float: left;
+  margin-right: 50px;
+}
+
+#footer .footer_top .sub {
+
+}
+
+#footer .footer_top .sub li {
+  margin-bottom: 5px;
+}
+
+#footer .footer_top .sub li:first-child h4 {
+  font-size: 18px;
+  color: #000;
+}
+
+#footer .footer_top .sub a {
+  font-size: 15px;
+  color: #666;
+}
+
+#footer .footer_line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+#footer .footer_bom {
+  margin: 0 auto;
+  width: 1000px;
+  height: 160px;
+  background-color: #ccc;
+}
+

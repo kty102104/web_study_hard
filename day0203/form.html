@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼문</title>
+</head>
+<body>
+  <form method="post" action="https://www.naver.com/">
+  <p>아이디: <input type="text" maxlength="12" size="20"
+  value="" placeholder="아이디를 입력하세요"></p>
+
+  <p><label for="ppp"></label>비밀번호: <input type="password" 
+  placeholder="비밀번호를 입력하세요" size="20" maxlength="12" name="ppp"></p>
+
+  <p>성별: <label>남자<input type="radio" name="gender"></label>
+  <label>여자<input type="radio" name="gender"></label></p>
+  
+  <!-- 
+    버튼중에 하나만 선택할때 사용, name속성을 동일한 값을 설정 
+    원래 label태그는 인근에 있는 input태그의 이름표이다.
+    근데 라디오버튼처럼 라벨에도 버튼 기능을 표함할려면 label태그로
+    input태그를 포함하면 label태그도 라디오 버튼 기능이 적용이 된다.
+  -->
+
+  <p>
+    취미: <label>드라이브<input type="checkbox" name="hobby"></label>
+          <label>영화감상<input type="checkbox" name="hobby"></label>
+          <label>게임<input type="checkbox" name="hobby"></label>
+          <label>등산<input type="checkbox" name="hobby"></label>      
+  </p>
+
+  <p>직업:
+    <select>
+      <option value="">선택하세요</option>
+      <option value="학생">학생</option>
+      <option value="컴퓨터/인터넷">컴퓨터/인터넷</option>
+      <option value="언론">언론</option>
+      <option value="공무원">공무원</option>
+      <option value="서비스업">서비스업</option>
+      <option value="의료">의료</option>
+      <option value="기타">기타</option>
+    </select>
+  </p>
+
+  <p>작성하기:<br>
+    <textarea cols="50" rows="20"></textarea>
+  </p>
+
+  <p>
+    사진: <input type="file">
+  </p>
+
+  <p>
+    <input type="submit" value="전송하기">
+    <input type="reset" value="재작성하기">
+    <!-- 순수한 버튼 -->
+    <button>버튼입니다</button>
+    <input type="button" value="클릭하기"
+    onclick="alert('클릭하였습니다')">
+  </p>
+
+</form>  
+</body>          
+</html>

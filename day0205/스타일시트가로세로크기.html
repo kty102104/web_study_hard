@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      background-image: url(./images/image01.jpg);
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: 200px;
+      background-position: 500px 200px; 
+      /* 가로값 세로값 이값을 사용하려면 반드시 no-repeat여야 함. */
+      height: 5000px;
+
+      /* background: url(이미지경로) no-repeat 0 0; 
+        한 줄로 간단하게 작성하는 법 */
+    
+      /*
+        repeat: 가로세로 연속적으로 나옴(기본)
+        no-repeat: 한번만 나옴
+        repeat-x: 가로방향으로 연속적으로 나옴
+        repeat-y: 세로방향으로 연속적으로 나옴
+      */
+    }
+
+    .box01 {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(48, 103, 83, 1);
+    }
+
+    .box02 {
+      width: 200px;
+      height: 500px;
+      background-color: rgb(112, 55, 14);
+    }
+
+    .box03 {
+      width: 500px;
+      height: 500px;
+      border: 5px solid #000;
+      background-color: aqua;
+      background-image: url(./images/image01.jpg);
+    }
+    /* transparent : 배경이나 글자 색상을 줄 때 투명하게*/
+  </style>
+</head>
+<body>
+  
+
+  <div class="box01"></div>
+  <div class="box02"></div> 
+  <div class="box03"></div>
+  
+</body>
+</html>

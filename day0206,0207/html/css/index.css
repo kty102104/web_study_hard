@@ -1,0 +1,377 @@
+#wrap {
+  margin: 0 auto; /* 자신을 가운데 정렬 */
+  width: 1000px;
+}
+
+#header {
+  width: 1000px;
+  height: 95px;
+  background-color: aquamarine;
+  position: relative; /* header안 요소들에 대한 포지션 기준 */
+}
+
+#header .logo { /* 하위 선택자(logo는 header의 하위 요소) */
+  float: left;
+  margin: 25px 0 0 50px;
+}
+
+#header .nav {
+  float: left;
+  margin-left: 70px;
+  margin-top: 35px;
+}
+
+#header .nav li {
+  /* display: inline; 가로 배치되지만 여백 때문에 사용 X */ 
+  float: left;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #000;  
+}
+
+#header .nav li.last {
+  padding-right: 0px;
+  margin-right: 0px;
+  border-right: 0px;
+}
+
+#header .nav li a {
+  font-size: 18px;  /* 글자 크기는 세로로 재기 */
+  font-weight: 900;
+  color: #000;
+}
+
+#header .info_nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#header .info_nav li {
+  float: left;
+  border-right: 1px solid #333;
+  margin-right: 10px;
+  padding-right: 10px;
+  line-height: 12px;
+}
+
+#header .info_nav li.last {
+  border-right: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#header .info_nav li a {
+  font-size: 12px;
+}
+
+#header .intranet_btn{
+  float: right;
+  margin: 35px 18px 0 0;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 900;
+  background-color: rgba(155, 149, 125, 1);
+  padding: 5px 20px;
+}
+
+#main_img {
+  width: 1000px;
+  height: 255px;
+  
+  /* background-image: url(../images/main_img.jpg); ../ : 상위 폴더로 이동 
+  background-repeat: no-repeat;
+  background-position: 0 0; */
+  
+  background: url(../images/main_img.jpg) no-repeat 0 0;
+  background-size: 1023px;
+}
+
+#contents {
+  width: 1000px;
+  height: 270px;
+  background-color: wheat;
+}
+
+#contents > div { /* 자식 선택자 */
+  float: left;
+}
+
+#cont1 {
+  width: 360px;
+  height: 130px;
+  background-color: aquamarine;
+}
+
+#cont1 > a {float: left;}
+
+#cont1 .btn1 {margin: 25px 0 0 19px;}
+#cont1 .btn2 {margin: 25px 0 0 10px;}
+#cont1 .btn3 {margin: 10px 0 0 19px;}
+
+#cont2 {
+  width: 300px;
+  height: 130px;
+  background-color: rgb(224, 225, 21);
+} 
+
+#cont2 .cont2_h {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #333;
+}
+
+#cont2 .cont2_h > h3 {  /* cont2_h안에 하나뿐이므로 별도 클래스 지정X */
+  margin: 10px 0 0 5px;
+  float: left;
+  font-size: 14px;
+} 
+#cont2 .cont2_h > a {
+  float: right;
+  margin: 14px 5px 0 0;
+  font-size: 10px;
+}
+
+#cont2 .cont2_h > a:hover {
+  color: red;
+}
+
+#cont2 .cont2_b {
+  width: 100%;
+  height: 100px;
+}
+
+#cont2 .cont2_b ul{
+  margin-top: 15px;
+  margin-left: 20px;  /* 블릿 기호가 ul 밖으로 빠져나가는 것 막기 위해 마진값 늘리기 */
+}
+
+#cont2 .cont2_b ul li{
+  margin-bottom: 2px;
+  list-style: disc;
+}
+
+#cont2 .cont2_b ul li span{
+  float: right;
+  margin-right: 5px;
+}
+
+#cont3 {
+  margin-left: 40px;
+  width: 300px;
+  height: 130px;
+  background-color: rgb(230, 138, 33);
+}
+
+#cont3 .cont3_h {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #333;
+  background-color: rgb(139, 218, 198);
+}
+
+#cont3 .cont3_h > h3 {
+  margin: 10px 0 0 5px;
+  float: left;
+  font-size: 14px;
+}
+
+#cont3 .cont3_h > a {
+  float: right;
+  margin: 14px 5px 0 0;
+  font-size: 10px;
+}
+
+#cont3 .cont3_h > a:hover {
+  color: red;
+}
+
+#cont3 .cont3_b {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(71, 164, 133);
+}
+
+#cont3 .cont3_b ul {
+  float: left;    /* ul의 margin-top값을 설정했는데 div가 줄어드는 문제 해결 */
+  margin: 15px 0 0 5px;
+}
+
+#cont3 .cont3_b li { /* ul 생략 가능 */
+  margin-bottom: 2px;
+  padding-left: 12px; /* 이미지와 텍스트가 겹치는 문제 해결 */
+  background: url(../images/icon_04.jpg) no-repeat 0 3px; /* 블릿 기호 자리에 이미지 사용 */
+}
+
+#cont3 .cont3_b span {  /* ul, li 생략 가능 */
+  float: right;
+  margin-right: 5px;
+}
+
+#cont4 {
+  width: 360px;
+  height: 115px;
+  background-color: rgb(225, 21, 191);
+}
+
+#cont4 .cont4_h {
+  float: left;
+  margin: 20px 0 0 20px;
+  width: 16px;
+  height: 75px;
+  background-color: tomato;
+}
+
+#cont4 .cont4_h h3 {
+  transform: rotate(90deg);
+}
+
+#cont4 .cont4_b {
+  float: left;
+  margin-top: 20px;
+}
+
+#cont4 .cont4_b > li {
+  float: left;
+  width: 50px;
+  height: 75px;
+  border-right: 1px dotted #000;
+  text-align: center;
+}
+
+#cont4 .cont4_b li.first {
+  width: 190px;
+}
+
+#cont4 .cont4_b li.first > img {
+  float: left;
+}
+
+#cont4 .cont4_b li.first > ul {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+
+#cont4 .cont4_b li.first li {
+  text-align: left;
+  color: #fff;
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+#cont5 {
+  width: 640px;
+  height: 115px;
+  background-color: rgb(21, 24, 225);
+}
+
+#cont5 .cont5_b {
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 415px;
+  height: 75px;
+  background-color: bisque;
+}
+
+#cont5 .menu {
+  float: left;
+  width: 90px;
+}
+
+#cont5 .menu li {
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+#cont5 .menu li a {
+  font-size: 15px;
+  display: block;
+  color: #333;
+}
+
+#cont5 .menu li a:hover {
+  background-color: #828282;
+  color: #fff;
+}
+
+#cont5 .img {
+  float: left;  
+  border: 1px solid #ccc;
+  margin-left: 5px;
+}
+
+#cont5 .txt_area {
+  float: left;
+  margin-left: 3px;
+  width: 230px;
+}
+
+#cont5 .txt_area .sub_ttl {
+  font-size: 13px;
+  letter-spacing: -2px;
+}
+
+#cont5 .txt_area .banner {
+  font-size: 11px;
+}
+
+#cont5 .cont5_mn {
+  float: left;
+  margin-top: 20px;
+  border-left: 2px solid #000;
+  width: 165px;
+  height: 70px;
+  background-color: rgb(128, 56, 9);
+}
+
+#footer {
+  width: 1000px;
+  height: 80px;
+  background-color: yellowgreen;
+}
+
+#footer .logo2 {
+  float: left;
+  margin: 20px 0 0 60px;
+}
+
+#footer .group {
+  float: left;
+  margin: 18px 0 0 20px;
+  padding-left: 10px;
+  width: 500px;
+  border-left: 2px solid #828282;
+}
+
+#footer .info_mn2 {
+  float: left;
+  margin: 10px 0 0 60px;
+}
+
+#footer .info_mn2 li {
+  float: left;
+  border-right: 1px solid #000;
+  margin-right: 10px;
+  padding-right: 10px;
+  line-height: 13px;
+}
+
+#footer .info_mn2 li.last {
+  border-right: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#footer .info_mn2 a {
+  font-size: 13px;
+}
+
+#footer .copy{
+  clear: left;
+  margin-top: 3px;
+  width: 100%;
+  font-size: 10px;
+}
+
+

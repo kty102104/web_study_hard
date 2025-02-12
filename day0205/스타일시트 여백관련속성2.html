@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+      body {
+        height: 3000px;
+      }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 900;
+      font-size: 15px;
+    }
+
+    .box1 {
+      float: left;
+      padding: 20px; /* 글자를 기준으로 여백 생성 */
+      background-color: red;
+      box-sizing: border-box; /* 크기 변화 없이 여백만 넣기 */
+    }
+
+    .box2 {
+      float: left;
+      padding: 50px 80px;
+      background-color: green;
+      box-sizing: border-box;
+    }
+
+    .box3 {
+      float: left;
+      padding: 50px 100px 30px;
+      background-color: blue;
+      box-sizing: border-box;
+    }
+
+    .box4 {
+      float: left;
+      background-color: orange;
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 
+    padding:요소의 테두리를 기준으로 안쪽 여백
+    padding: 0 0; 패딩의 세로값 가로값
+    padding:0 0 0; 위 좌우 아래
+    padding: 0 0 0 0; top right bottom left
+    padding-top, padding-right, padding-bottom, padding-left 하나하나 패딩을 적용할때
+    *****패딩은 안쪽 여백이므로 값이 요소의 가로값, 세로값에서 벗어나면 요소가 크기가 변화됨
+  -->
+
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+
+
+</body>
+</html>

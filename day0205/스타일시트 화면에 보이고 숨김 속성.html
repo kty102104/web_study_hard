@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: skyblue;
+    }
+    
+    .box01 {
+      opacity: 1;
+      background-color: red;
+    }
+
+    .box02 {
+      opacity: 0.3;
+      background-color: red;
+    }
+    
+    .box02:hover {  /* hover : 마우스 올리면 실행됨 */
+      opacity: 1;
+      transition: all 0.5s;
+    }
+
+    .box02-1 {
+      opacity: 1;
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    .box03 {
+      visibility: visible;
+      background-color: blueviolet;
+    }
+
+    .box04 {
+      display: none;
+      background-color: blue;
+    }
+
+    .box05 {
+      background-color: rgb(3, 3, 3);
+    }
+    /*
+      opacity:x; 요소의 투명도 지정
+      x : 요소의 투명도 지정 0 ~ 1 사이 값
+      **자신이 포함하는 모든 요소에서 같은 투명도 적용됨
+    
+      visibility:화면에 보이거나 숨기거나 함.
+      visibility:hidden; 화면에서 숨김
+      visibility:visible; 화면에서 보여줌
+
+      display: 화면 보여주는 방식
+      display:none; 화면에서 숨김.
+      display:block; 블록레벨요소로 만듬.(화면에 보여줌)
+      display:inline; 인라인레벨로 만듬
+      display:inline-block; 인라인레벨이면서 가로값과 세로값이 적용됨.
+
+      opacity, visibility는 0, hidden이라도 본래 자리를 차지함
+      하지만 display는 none이면 자리차지 X
+    */
+  </style>
+</head>
+<body>
+  <div class="box01">box01</div>
+  <div class="box02">box02</div>
+  <div class="box02-1">box02-1</div>
+  <div class="box03">box03</div>
+  <div class="box04">box04</div>
+  <div class="box05">box05</div>
+  
+
+</body>
+</html>
