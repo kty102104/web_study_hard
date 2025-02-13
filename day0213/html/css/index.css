@@ -1,0 +1,162 @@
+#wrap {
+  width: 100%;
+}
+
+/* 상단영역 */
+#header {
+  width: 100%;
+  height: 170px;
+}
+
+#header .logo {
+  width: 100%;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+
+#header .logo h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: 900;
+}
+
+#header .nav {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .nav ul {}
+
+#header .nav li {
+  float: left;
+  margin-right: 50px;
+}
+
+#header .nav a {
+  font-size: 18px;
+}
+
+/* 메인이미지영역 */
+#main_img {
+  width: 100%;
+  height: 800px;
+  background: url(../images/visual.jpg) no-repeat 50% 0;
+}
+
+/* 콘텐츠영역 */
+#contents {
+  width: 100%;
+  height: 1765px;
+}
+
+#contents .best {
+  margin: 0 auto;
+  width: 1200px;
+  height: 840px;
+}
+
+#contents .best_h {
+  padding: 30px 0 0 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+}
+
+#contents .best_h h3 {
+  font-size: 17px;
+}
+
+#contents .best_b {
+  width: 100%;
+  height: 620px;
+}
+
+#contents .best_b .l_img {
+  float: left;
+  width: 600px;
+  height: 615px;
+  border: 1px solid #ccc;
+}
+
+#contents .best_b .l_img img {
+  width: 100%;
+}
+/* 615 - 455 = 160 */
+#contents .best_b .l_img h4 {
+  float: left;
+  font-size: 40px;
+  line-height: 160px;
+  padding: 0 25px;
+}
+
+#contents .best_b .l_img .txt_group {
+  float: left;
+  margin:55px 0 0 0;
+}
+
+#contents .best_b .l_img p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contents .best_b .l_img span {
+  font-size: 16px;
+}
+
+#contents .best_b .l_img a {
+  float: right;
+  margin: 80px 25px 0 0;
+}
+
+#contents .best_b .list {
+  float: right;
+  width: 550px;
+}
+
+#contents .best_b .list li {
+  width: 100%;
+  height: 106px;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid gray;
+}
+
+#contents .list h4 {
+  float: left;
+  font-size: 40px;
+  line-height: 106px;
+  padding: 0 20px;
+}
+#contents .list img {
+  float: left;
+}
+#contents .list .txt_group {
+  float: left;
+  margin: 30px 0 0 20px;
+}
+#contents .list p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#contents .list span {
+  font-size: 16px;
+}
+#contents .list a {
+  float: right;
+  margin-top: 65px;
+}
+
+#contents .best_f {
+  
+}
+
+/* 하단영역 */
+#footer {
+  width: 100%;
+  height: 160px;
+  background-color: wheat;
+}
