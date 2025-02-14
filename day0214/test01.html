@@ -46,9 +46,16 @@
         색상의 범위는 현재 박스영역의 시작(0%)과 끝(100%)으로 설정
         색상의 범위로 색상의 위치를 설정
         background: gradient(linear, red, green);
+        background: gradient(radial, red, green);
         background: -webkit-linear-gradient(left, red, green);
       */
       background: linear-gradient(45deg, red 10%, orange 20%, yellow 100%);
+    }
+    .box4 {
+      width: 500px;
+      height: 500px;
+      border: 2px solid #000;
+      background:-webkit-radial-gradient(red, orange);
     }
   </style>
 </head>
@@ -57,6 +64,7 @@
   <br><br>
   <div class="box2"></div>
   <div class="box3"></div>
+  <div class="box4"></div>
   
 </body>
 </html>
