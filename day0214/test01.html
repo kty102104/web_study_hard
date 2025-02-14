@@ -12,9 +12,14 @@
 
     .box1 {
       width: 100%;
-      height: 255px;
-      /* vw : 화면의 가로값 = 100vw   vh : 화면의 세로값 = 100vh */
+      height: 455px;
       border: 2px solid #000;
+      /* 
+        vw : 화면의 가로값 = 100vw   vh : 화면의 세로값 = 100vh 
+        1920 = 100vw
+        455 -> (455/1920) * 100 = 24vw      
+      
+      */
       background-image: url(./images/main_img.jpg);
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -22,12 +27,28 @@
     }
     .box2 {
       width: 100%;
-      height: 255px;
+      height: 24vw;
       border: 2px solid #000;
       background-image: url(./images/main_img.jpg);
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 100%;
+    }
+    .box3 {
+      width: 1000px;
+      height: 455px;
+      border: 2px solid #000;
+      /* background-color: aqua; */
+      /* 
+        background: linear-gradient(방향, 색상1, 색상2);
+        방향: top, right, bottom, left, 숫자deg
+        색상은 추가하는 개수만큼 영역이 분할된다.
+        색상의 범위는 현재 박스영역의 시작(0%)과 끝(100%)으로 설정
+        색상의 범위로 색상의 위치를 설정
+        background: gradient(linear, red, green);
+        background: -webkit-linear-gradient(left, red, green);
+      */
+      background: linear-gradient(45deg, red 10%, orange 20%, yellow 100%);
     }
   </style>
 </head>
@@ -35,6 +56,7 @@
   <div class="box1"></div>
   <br><br>
   <div class="box2"></div>
+  <div class="box3"></div>
   
 </body>
 </html>
