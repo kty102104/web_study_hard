@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      margin: 100px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid #000;
+    }
+    .box1:hover {
+      transform: translate(50px, 0px) rotate(360deg) scale(0.5);
+      transition-duration: 0.5s;
+      transition-delay: 1s;
+      transition-property: all;
+    }
+    .box1-1 {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+      transition: all 0.5s;
+      transition-delay: 1s;
+      transition-property: all;
+    }
+    .box1-1:hover {
+      transform: translate(50px, 0px) rotate(360deg) scale(0.5);
+      transition: all 0.5s;
+      transition-delay: 1s;
+      transition-property: all;
+    }
+    .box1-2 {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+      transition: all 0.5s;
+    }
+    .box1-2:hover {
+      transform: translate(50px, 0px) rotate(360deg) scale(0.5);
+    }
+    .box2 {
+      border: 5px solid red;
+    }
+    .box2-1 {
+      margin: 0;
+      background-color: aqua;
+    }
+    .box2:hover .box2-1 {
+      transform: rotate(360deg);
+      transition: all 0.5s;
+    }
+    .box4 {
+      width: 150px;
+      font-size: 16px;
+      color: #000;
+      border: 5px solid #000;
+      transition: all 0.7s;
+    }
+    .box3:hover + .box4 {   /* + : 인접 형제 선택자 */
+      width: 500px;
+      font-size: 30px;
+      color: red;
+      border: 5px solid red;
+    }
+
+    .box3-0:hover ~ .box5 {   /* ~ : 형제 선택자 */
+      transform: scale(1.5);
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <!-- 자신에게 효과를 적용 -->
+  <div class="box1">box1</div>
+  <div class="box1-1">box1-1</div>
+  <div class="box1-2">box1-2</div>
+
+  <!-- 자신의 자식 요소에 효과를 적용 -->
+  <div class="box2">
+    <div class="box2-1">box2-1</div>
+  </div>
+
+  <!-- 형제 요소에 효과적용 -->
+  <div class="box3-0">box3-0</div>
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+  <div class="box5">box5</div>
+</body>
+</html>

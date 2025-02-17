@@ -29,8 +29,6 @@
   align-items: center;
 }
 
-#header .nav ul {}
-
 #header .nav li {
   float: left;
   margin-right: 50px;
@@ -148,9 +146,6 @@
 #contents .list a {
   float: right;
   margin-top: 65px;
-}
-#contents .best_f {
-
 }
 #contents .event {
   margin: 0 auto;
@@ -281,7 +276,6 @@
   padding-top: 30px; /* info_mn에 설정하면 footer가 같이 내려감 */
   box-sizing: border-box;
 }
-
 #footer .info_mn {
   margin-bottom: 20px;
 }
