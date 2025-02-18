@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      opacity: 0;
+      animation-name: ani01;
+      animation-delay: 1s;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes ani01 {
+      from {  /* 0%도 가능 */
+        transform: translate(0px, 0px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      50% {
+        transform: translate(250px, 100px);
+      }
+      90% {    
+        transform: translate(500px, 0px);
+      }
+      to {    /* 100%도 가능 */
+        transform: translate(500px, 0px);
+      }
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      opacity: 0;
+      animation-name: ani02;
+      animation-delay: 2s;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes ani02 {
+      from {  /* 0%도 가능 */
+        transform: translate(0px, 0px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      50% {
+        transform: translate(250px, 100px);
+      }
+      90% {    
+        transform: translate(500px, 0px);
+      }
+      to {    /* 100%도 가능 */
+        transform: translate(500px, 0px);
+      }
+    }
+
+    .box3 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      opacity: 0;
+      animation-name: ani03;
+      animation-delay: 3s;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes ani03 {
+      from {  /* 0%도 가능 */
+        transform: translate(0px, 0px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      50% {
+        transform: translate(250px, 100px);
+      }
+      90% {    
+        transform: translate(500px, 0px);
+      }
+      to {    /* 100%도 가능 */
+        transform: translate(500px, 0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+</body>
+</html>
