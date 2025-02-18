@@ -34,14 +34,15 @@
       color: #ccc;
     }
     #all > div {
-      width: 300px;
+      width: 0px;
       height: 325px;
       border: 1px solid #ccc;
       box-sizing: border-box;
       position: absolute;
       top: 25px;
       left: 0px;
-      display: none;
+      /* display: none; 애니메이션 적용 안됨 */
+      opacity: 0;
     }
     #all > div > h3 {
       font-size: 50px;
@@ -65,8 +66,11 @@
     #all .btn1:checked ~ .box1,
     #all .btn2:checked ~ .box2,
     #all .btn3:checked ~ .box3,
-    #all .btn4:checked ~ .box4 {
-      display: block;
+    #all .btn4:checked ~ .box4{
+      /* display: block; */   
+      opacity: 1;
+      width: 300px;
+      transition: all 0.7s;
     }
 
 
@@ -76,12 +80,12 @@
 <body>
   <div id="all">
     <label for="mn1">menu1</label>
-    <input type="radio" id="mn1" name="mn" class="btn1" checked>
+    <input type="radio" id="mn1" name="mn" class="btn1">
     <label for="mn2">menu2</label>
     <input type="radio" id="mn2" name="mn" class="btn2">
     <label for="mn3">menu3</label>
-    <input type="radio" id="mn3" name="mn" class="btn3">
-    <label for="mn4">menu4</label>
+    <input type="radio" id="mn3" name="mn" class="btn3" checked>
+    <label for="mn4">menu4</label> 
     <input type="radio" id="mn4" name="mn" class="btn4">
       
     <div class="box1">
