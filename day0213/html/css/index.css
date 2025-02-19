@@ -301,3 +301,7 @@
   font-style: normal;
   line-height: 1.8;
 }
+
+@media all and (max-width: 1200px) {
+  
+}
