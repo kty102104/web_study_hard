@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      width: 100%;
+      background-color: lightcyan;
+      display: flex;
+    }
+    article {
+      background-color: aqua;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 50px;
+      display: flex; 
+    }
+    section article:nth-child(1) {
+      flex-grow: 1;
+    }
+    section article:nth-child(2) {
+      flex-grow: 2;
+    }
+    section article:nth-child(3) {
+      flex-grow: 3;
+    }
+    
+
+
+
+  </style>
+</head>
+<body>
+  <section>
+    <article>FLEX GROW</article>
+    <article>FLEX GROW</article>
+    <article>FLEX GROW</article>
+  </section>  
+</body>
+</html>
