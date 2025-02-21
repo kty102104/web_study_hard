@@ -45,7 +45,7 @@
 /* 콘텐츠영역 */
 #contents{
   width: 100%;
-  /* height: 1765px; */
+  /*height: 1765px;*/
 }
 #contents .best{
   margin:0 auto;
@@ -172,7 +172,7 @@
   width: 100%;
 } 
 #contents .event_b figcaption{
-  padding: 25px 20px 0 20px;
+  padding: 25px 20px 0 20px;  /* 공통적인 여백은 묶어서 설정 */
 }
 #contents .event_b h4{
   font-size: 18px;
@@ -196,7 +196,7 @@
 #contents .event_f{ 
   width: 100%;
   height: 175px;
-  text-align: center; /* 글자가 속한 부모 요소에 설정 */
+  text-align: center;   /* 글자가 속한 부모 요소에 설정 */
   line-height: 175px;
 }
 
@@ -430,7 +430,7 @@
   #contents .event_b img{
     width: 100%;
   } 
-  #contents .event_b figcaption{  /* 공통적인 여백은 묶어서 설정 */
+  #contents .event_b figcaption{
     padding: 25px 20px 0 20px;
   }
   #contents .event_b h4{
@@ -498,11 +498,11 @@
   
   #contents .banner_in > div:nth-child(2){
     /* margin-left: 150px; */
-    margin-left: 9vw;
+    margin-left:9vw ;
     padding-top:55px;
   }
   #contents .banner_in > div:nth-child(2) h5{
-    font-size: 2.5vw;
+    font-size:2.5vw;
     color: #ccc;
     font-weight: 600;
   }
@@ -511,9 +511,9 @@
     padding-top:55px;
   }
   #contents .banner_in > div:nth-child(3) img{
+    /* width: 275px; */
     width: 22.9vw;
   }
-  
 }
 
 /* ----------------------------------------------------------------------------------------------------------*/
@@ -533,7 +533,7 @@
     color:black;
     font-weight: 900;
   }
-
+  
   #header .nav{
     width: 100%;
     height: 55px;
@@ -545,22 +545,23 @@
   #header .nav li{
     float: left;
     /* margin-right: 50px; */
-    margin-right: 1.5vw;
-  }
-  #header .nav li:nth-child(5){
-    display: none;
+    margin-right: 3vw;
   }
   #header .nav a{
-    font-size:16px;
+    font-size:18px;
   }
+
+  /* 메인이미지 */
   #main_img{
     width: 100%;
+    /* height: 800px; */
     height: 40vw;
     background:url(../images/visual.jpg) no-repeat 50% 0;
-    background-size: 100%;
+    background-size:100%;
     border-bottom: 1px solid red;
   }
 }
+
 
 /* ----------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:480px) {
@@ -575,11 +576,12 @@
   #header .nav a{
     font-size:16px;
   }
+
   #contents .best{
     margin:0 auto;
     /* width: 1200px; */
     width: 100%;
-    height: 1680px;
+    height: 1480px;
   }
   #contents .best_h{
     padding: 30px 0 0 5px;
@@ -627,8 +629,10 @@
     float: right;
     margin: 80px 25px 0 0;
   }
+  
+  
   #contents .best_b .list{
-    float: right; 
+    float:none; 
     /* width: 550px; */
     width: 100%;
   }
@@ -639,12 +643,43 @@
     margin-bottom: 27px;
     border-bottom: 1px solid #ccc;
   }
+  #contents .list h4{
+    float: left;
+    font-size: 40px;
+    line-height: 106px;
+    padding: 0 20px;
+  }
+  #contents .list img{
+    float: left;
+  }
+  #contents .list .txt_group{
+    float: left;
+    margin: 30px 0 0 20px;
+  }
+  #contents .list p{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #contents .list span{
+    font-size: 16px;
+  }
+  #contents .list a{
+    float: right;
+    margin-top: 65px;
+  }
+  #contents .best_f{
+    width: 100%;
+    border-bottom: 1px solid red;
+  }
+  #contents .best_f > img{
+    width: 100%;
+  }
 
   #contents .event{
     margin: 0 auto;
     /* width: 1200px; */
     width: 100%;
-    height: 1630px;
+    height: 2000px;
   }
   #contents .event_h{
     width: 100%;
@@ -668,7 +703,7 @@
     margin-right: 3.3%;
     /* width: 370px; */
     width: 100%;
-    /* height: 610px; */
+    /* height: 610px;*/
     height: 127vw;
     border: 1px solid #ccc;
   }
@@ -678,12 +713,12 @@
   #contents .event_b img{
     width: 100%;
   } 
-  #contents .event_b figcaption{  /* 공통적인 여백은 묶어서 설정 */
+  #contents .event_b figcaption{
     padding: 2.5vw 4vw 0 4vw;
   }
   #contents .event_b h4{
     font-size: 18px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
   }
   #contents .event_b p{
     font-size: 13px;
@@ -710,8 +745,8 @@
   #contents .event_f a{
     font-size: 17px;
   }
+  
 }
-
 /* ----------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:320px) {
   
